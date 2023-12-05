@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SecurityController!{% endblock %}
+
+{% block body %}
+<form method="post">
+    {{ form_row(form.username, {'attr': {'class': 'form-input'}}) }}
+    {{ form_row(form.password, {'attr': {'class': 'form-input'}}) }}
+    <button type="submit" class="btn">Connexion</button>
+</form>
+{% endblock %}
